@@ -26,6 +26,7 @@ import SampleTwentyTwo from "./components/VueModelModifiersExample.vue";
 import SampleTwentyThree from "./components/VueStyleExample.vue";
 import SampleTwentyFour from "./components/RefExample.vue";
 import SampleTwentyFive from "./components/ReactiveExample.vue";
+import SampleTwentySix from "./components/ComputedExample.vue";
 
 const samples = [
   SampleOne,
@@ -53,6 +54,7 @@ const samples = [
   SampleTwentyThree,
   SampleTwentyFour,
   SampleTwentyFive,
+  SampleTwentySix,
 ];
 </script>
 
