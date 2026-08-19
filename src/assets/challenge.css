@@ -1,0 +1,15 @@
+/* src/assets/challenge.css */
+
+.btn-external {
+  background-color: #2ecc71;   /* 초록 배경 */
+  color: #ffffff;              /* 흰 글자 */
+  border: none;                /* 기본 테두리 제거 */
+  border-radius: 8px;          /* 둥근 모서리 */
+  padding: 10px 20px;          /* 버튼 안쪽 여백 (안 주면 너무 작음) */
+  font-size: 16px;
+  cursor: pointer;             /* 마우스 올리면 손가락 모양 */
+}
+
+.btn-external:hover {
+  background-color: #27ae60;   /* 마우스 올리면 살짝 진한 초록 */
+}
