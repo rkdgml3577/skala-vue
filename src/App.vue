@@ -24,7 +24,7 @@ import SampleTwenty from "./components/TwowayDataBindingWithVueModel.vue";
 import SampleTwentyOne from "./components/FormElementsHandlingExample.vue";
 import SampleTwentyTwo from "./components/VueModelModifiersExample.vue";
 import SampleTwentyThree from "./components/VueStyleExample.vue";
-
+import SampleTwentyFour from "./components/RefExample.vue";
 const samples = [
   SampleOne,
   SampleTwo,
@@ -48,6 +48,8 @@ const samples = [
   SampleTwenty,
   SampleTwentyOne,
   SampleTwentyTwo,
+  SampleTwentyThree,
+  SampleTwentyFour,
 ];
 </script>
 
