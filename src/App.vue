@@ -27,6 +27,11 @@ import SampleTwentyThree from "./components/VueStyleExample.vue";
 import SampleTwentyFour from "./components/RefExample.vue";
 import SampleTwentyFive from "./components/ReactiveExample.vue";
 import SampleTwentySix from "./components/ComputedExample.vue";
+import SampleTwentySeven from "./components/WatchExample.vue";
+import SampleTwentyEight from "./components/MultiSourceWatchExample.vue";
+import SampleTwentyNine from "./components/DeepWatchExample.vue";
+import SampleThirty from "./components/ReactiveDataWatchExample.vue";
+import SampleThirtyOne from "./components/WatchEffectExample.vue";
 
 const samples = [
   SampleOne,
@@ -55,6 +60,11 @@ const samples = [
   SampleTwentyFour,
   SampleTwentyFive,
   SampleTwentySix,
+  SampleTwentySeven,
+  SampleTwentyEight,
+  SampleTwentyNine,
+  SampleThirty,
+  SampleThirtyOne,
 ];
 </script>
 
