@@ -37,6 +37,7 @@ import SampleThirtyTwo from "./components/LifecycleHookExample.vue";
 import SampleThirtyThree from "./components/PropsEmitsParents.vue";
 import SampleThirtyFour from "./components/SlotDefaultParent.vue";
 import SampleThirtyFive from "./components/SlotNamedParent.vue";
+import SampleThirtySix from "./components/SlotScopedParent.vue";
 const isVisible = ref(true);
 const samples = [
   SampleOne,
@@ -74,6 +75,7 @@ const samples = [
   SampleThirtyThree,
   SampleThirtyFour,
   SampleThirtyFive,
+  SampleThirtySix,
 ];
 </script>
 
