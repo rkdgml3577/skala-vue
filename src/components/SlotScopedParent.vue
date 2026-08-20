@@ -1,6 +1,7 @@
 <script setup>
 import SlotScopedChild from "./SlotScopedChild.vue";
 </script>
+
 <template>
   <div class="practice-section">
     <h2>Scoped Slot 주입 실습</h2>
@@ -14,3 +15,12 @@ import SlotScopedChild from "./SlotScopedChild.vue";
     <SlotScopedChild> </SlotScopedChild>
   </div>
 </template>
+
+<style scoped>
+.display-panel {
+  background-color: #000;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+</style>

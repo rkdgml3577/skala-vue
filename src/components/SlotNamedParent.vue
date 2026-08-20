@@ -1,6 +1,7 @@
 <script setup>
 import SlotNamedChild from "./SlotNamedChild.vue";
 </script>
+
 <template>
   <div class="practice-section">
     <h2>Named Slot 주입 실습</h2>
@@ -10,7 +11,7 @@ import SlotNamedChild from "./SlotNamedChild.vue";
       </template>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        temporincididunt..."
+        tempor incididunt..."
       </p>
     </SlotNamedChild>
   </div>
