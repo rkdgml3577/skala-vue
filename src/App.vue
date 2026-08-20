@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
+import { ref } from "vue";
 import SampleOne from "./components/ReactivityExample.vue";
 import SampleTwo from "./components/TextInterpolationExample.vue";
 import SampleThree from "./components/VueHtml.vue";
@@ -32,7 +33,8 @@ import SampleTwentyEight from "./components/MultiSourceWatchExample.vue";
 import SampleTwentyNine from "./components/DeepWatchExample.vue";
 import SampleThirty from "./components/ReactiveDataWatchExample.vue";
 import SampleThirtyOne from "./components/WatchEffectExample.vue";
-
+import SampleThirtyTwo from "./components/LifecycleHookExample.vue";
+const isVisible = ref(true);
 const samples = [
   SampleOne,
   SampleTwo,
@@ -65,16 +67,52 @@ const samples = [
   SampleTwentyNine,
   SampleThirty,
   SampleThirtyOne,
+  SampleThirtyTwo,
 ];
 </script>
 
 <template>
-  <div v-for="(sample, index) in samples" :key="index" class="box">
-    <component :is="sample" />
+  <template v-if="isVisible">
+    <div v-for="(sample, index) in samples" :key="index" class="box">
+      <component :is="sample" />
+    </div>
+  </template>
+  <div v-else class="tombstone">
+    🪦 모든 컴포넌트가 파괴되었습니다. (F12 콘솔 창을 확인해 보세요!)
+  </div>
+
+  <div class="control-panel">
+    <button class="toggle-btn" @click="isVisible = !isVisible">
+      <span v-if="isVisible">🔴 모든 컴포넌트 파괴하기 (v-if="false")</span>
+      <span v-else>🟢 모든 컴포넌트 다시 살리기 (v-if="true")</span>
+    </button>
   </div>
 </template>
 
 <style scoped>
+.control-panel {
+  text-align: center;
+  margin: 20px 0;
+}
+.toggle-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff7675;
+  color: white;
+  cursor: pointer;
+}
+.tombstone {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #2d3436;
+  border-radius: 8px;
+  margin-top: 20px;
+}
 .box {
   padding: 20px;
   margin: 12px 0;
