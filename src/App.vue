@@ -36,6 +36,7 @@ import SampleThirtyOne from "./components/WatchEffectExample.vue";
 import SampleThirtyTwo from "./components/LifecycleHookExample.vue";
 import SampleThirtyThree from "./components/PropsEmitsParents.vue";
 import SampleThirtyFour from "./components/SlotDefaultParent.vue";
+import SampleThirtyFive from "./components/SlotNamedParent.vue";
 const isVisible = ref(true);
 const samples = [
   SampleOne,
@@ -72,6 +73,7 @@ const samples = [
   SampleThirtyTwo,
   SampleThirtyThree,
   SampleThirtyFour,
+  SampleThirtyFive,
 ];
 </script>
 
