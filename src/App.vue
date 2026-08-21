@@ -38,6 +38,7 @@ import SampleThirtyThree from "./components/PropsEmitsParents.vue";
 import SampleThirtyFour from "./components/SlotDefaultParent.vue";
 import SampleThirtyFive from "./components/SlotNamedParent.vue";
 import SampleThirtySix from "./components/SlotScopedParent.vue";
+import SampleThirtySeven from "./components/PiniaBasic.vue";
 const isVisible = ref(true);
 const samples = [
   SampleOne,
@@ -76,6 +77,7 @@ const samples = [
   SampleThirtyFour,
   SampleThirtyFive,
   SampleThirtySix,
+  SampleThirtySeven,
 ];
 </script>
 
