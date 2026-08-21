@@ -39,6 +39,10 @@ import SampleThirtyFour from "./components/SlotDefaultParent.vue";
 import SampleThirtyFive from "./components/SlotNamedParent.vue";
 import SampleThirtySix from "./components/SlotScopedParent.vue";
 import SampleThirtySeven from "./components/PiniaBasic.vue";
+import SampleThirtyEight from "./components/AxiosWeather.vue";
+import SampleThirtyNine from "./components/AxiosJson.vue";
+import SampleForty from "./components/ElementPlus.vue";
+
 const isVisible = ref(true);
 const samples = [
   SampleOne,
@@ -78,6 +82,9 @@ const samples = [
   SampleThirtyFive,
   SampleThirtySix,
   SampleThirtySeven,
+  SampleThirtyEight,
+  SampleThirtyNine,
+  SampleForty,
 ];
 </script>
 
